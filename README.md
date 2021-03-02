@@ -1,6 +1,7 @@
-# Project Title
+# TextField
 
-One Paragraph of project description goes here
+The description of this program is create a Textfield with buttons that determines the horziontal allignment and column-size properties
+dynamically, meaning that you can change it on the fly and the size/allignment will change depending on the values you choose and what allignment you want it to have.
 
 ## Example Output
 
@@ -13,12 +14,19 @@ This image will display as your example output. Name the image README.jpg in you
 This section should restate the assignment and explain how you analyzed the requirements in order 
 to develop a solution.
 
+The assignment basically wants me to create an HBox that has radioButtons that designate the horizontal allignment and a column box that you can input a value into
+to determine the size of a column that also changes the size and allignment dynamically, meaning in real-time, meaning you don't need to run the program over to see the effects.
+I analzyed the requirements to develop a solution by simply just looking at the notes and overall descriptions of the pearson chapter and concluded that it would need buttons, HBox, Textfield and a vBox to display using a Stage. All the information is there for me to see and analzye what I exactly need.
+
 ### Design
 
-How did you approach your program design? Did you use multiple classes to define various objects?
+No I just used one whole class for this program with a bunch of javaFX methods/objects. Buttons, Textfields HBoxes stood
+out the most during the project and were very needed in order to make this program work. 
 
 ```
-Give examples
+An Example of this would be Demo.setAlignment(Pos.CENTER_LEFT);
+       Column.setAlignment(Pos.CENTER_RIGHT);
+       Demo is allignment of the buttons and column is the alignment of the column box.
 ```
 
 ### Testing
@@ -41,7 +49,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Notes
 
-Explain any issues or testing instructions.
+No issues, the pearson notes helped me develop this program very easily
 
 ## Do not change content below this line
 ## Adapted from a README Built With
