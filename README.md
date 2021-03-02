@@ -24,9 +24,13 @@ No I just used one whole class for this program with a bunch of javaFX methods/o
 out the most during the project and were very needed in order to make this program work. 
 
 ```
-An Example of this would be Demo.setAlignment(Pos.CENTER_LEFT);
+An Example of this would be 
+TextField Demo = new TextField();
+       TextField Column = new TextField();
+       This is my textfield it only requires two objects as stated in the requirements which is column size and horizontal allignment
+       which then I apply the allignment to my box using 
+       Demo.setAlignment(Pos.CENTER_LEFT);
        Column.setAlignment(Pos.CENTER_RIGHT);
-       Demo is allignment of the buttons and column is the alignment of the column box.
 ```
 
 ### Testing
