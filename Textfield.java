@@ -21,7 +21,7 @@ import javafx.stage.Stage;
     
         
         //Create Textfield
-       TextField Demo = new TextField();
+       TextField Demo = new TextField("TextField");
        TextField Column = new TextField();
        
   
