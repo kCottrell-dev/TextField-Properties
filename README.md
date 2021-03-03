@@ -96,7 +96,7 @@ You won't get any data from the program, but it can be used as a little demonstr
 so you know how to make these objects dynamic
 Such as when I type my name Kenneth Cottrell
 When I press left, it will allign to the left, and vice-versa.
-When I type the column length, it will change so lets say I type only 6 in the column box when I have my full name typed
+When I type the column length, it will change so lets say I type only 4 in the column box when I have my full name typed
 It will only show my first name.
 So that's a little big of a demonstration in words, on what the program does, so you can use this as a future reference.
 
