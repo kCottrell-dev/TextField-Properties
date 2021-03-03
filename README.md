@@ -37,19 +37,68 @@ TextField Demo = new TextField();
 
 A step by step series of examples that you developed to properly test the program. 
 
-Say what the step will be
+Step One: Create the Textfield
 
 ```
-Give the example
+  TextField Demo = new TextField();
+       TextField Column = new TextField();
 ```
 
-And repeat
+Step Two: Set Allignments
 
 ```
-until finished
+Demo.setAlignment(Pos.CENTER_LEFT);
+       Column.setAlignment(Pos.CENTER_RIGHT);
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Step Three: Create Buttons & Make it so one button is selected
+
+```
+RadioButton ButtonL = new RadioButton("Left");
+       RadioButton ButtonC = new RadioButton("Center");
+       RadioButton ButtonR = new RadioButton("Right");
+       ButtonL.setStyle("-fx-color: cyan; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-family: 'Georgia' ");
+       ButtonC.setStyle("-fx-color: cyan; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-family: 'Georgia' ");
+       ButtonR.setStyle("-fx-color: cyan; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-family: 'Georgia' ");
+       HBox hBox2 = new HBox(8);
+       hBox2.setAlignment(Pos.CENTER);
+       hBox2.getChildren().addAll(ButtonL, ButtonC, ButtonR);
+       
+       ToggleGroup group = new ToggleGroup();
+       ButtonL.setToggleGroup(group);
+       ButtonC.setToggleGroup(group);
+       ButtonR.setToggleGroup(group);
+       
+      ButtonL.setOnAction(e -> Demo.setAlignment(Pos.BASELINE_LEFT));
+      ButtonC.setOnAction(e -> Demo.setAlignment(Pos.BASELINE_CENTER));
+      ButtonR.setOnAction(e -> Demo.setAlignment(Pos.BASELINE_RIGHT)); 
+```
+Step Four: Set scene and place it in stage
+
+```
+Scene scene = new Scene(vBox);
+       vBox.setStyle("-fx-background-color: gray; -fx-text-fill: white;");
+       primaryStage.setTitle("Textfield");
+       primaryStage.setScene(scene);
+       primaryStage.show();
+```
+
+Step Five: Make ColumnSize Dynamic
+
+```
+Column.setOnAction(e->
+                Demo.setPrefColumnCount(Integer.parseInt(Column.getText())));
+        Label lblColumnSize = new Label("Column Size", Column);
+        lblColumnSize.setContentDisplay(ContentDisplay.RIGHT);
+```
+
+You won't get any data from the program, but it can be used as a little demonstration for future projects
+so you know how to make these objects dynamic
+Such as when I type my name Kenneth Cottrell
+When I press left, it will allign to the left, and vice-versa.
+When I type the column length, it will change so lets say I type only 6 in the column box when I have my full name typed
+It will only show my first name.
+So that's a little big of a demonstration in words, on what the program does, so you can use this as a future reference.
 
 ## Notes
 
