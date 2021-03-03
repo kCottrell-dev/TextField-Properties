@@ -5,8 +5,6 @@ dynamically, meaning that you can change it on the fly and the size/allignment w
 
 ## Example Output
 
-This image will display as your example output. Name the image README.jpg in your project folder.
-
 ![Sample Output](README.jpg)
 
 ## Analysis Steps
